@@ -3,149 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COE IN iOS APP DEVELOPMENT | Portfolio</title>
+    <title>The Engineering Atelier | COE in iOS App Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Portfolio of COE IN iOS APP DEVELOPMENT featuring student-developed projects like GURUCHATRA, College Navigation, and more.">
 </head>
 <body>
-    <div class="bg-blob blob-1"></div>
-    <div class="bg-blob blob-2"></div>
 
-    <header id="header">
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">COE iOS.</a>
-                <ul class="nav-links">
-                    <li><a href="#projects">Student Projects</a></li>
-                    <li><a href="#about">About Lab</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;">
+                <img src="assets/images/logo.png" alt="Alliance University Logo" style="height: 38px; object-fit: contain;">
+                <svg width="22" height="26" viewBox="0 0 384 512" style="fill: currentColor; margin-left: -4px;"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                <span style="font-size: 1.1rem; font-weight: 700; letter-spacing: -0.5px;">COE in iOS APP DEVELOPEMENT</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#lab">Lab Environment</a></li>
+            </ul>
+            <a href="#projects" class="btn btn-primary nav-cta">View Project</a>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-watermark">
-                <img src="assets/images/image.png" alt="Apple Logo">
+    <!-- Hero Section -->
+    <section class="hero container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="eyebrow">COE IOS APP DEVELOPMENT LAB</span>
+                <h1>Innovating the Future of <span class="text-blue">iOS Development</span></h1>
+                <p>A premier incubator where students master Swift and Xcode to build the next generation of Apple ecosystem experiences through precision engineering and editorial design.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                </div>
             </div>
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="reveal">COE IN iOS <span>APP DEVELOPMENT</span></h1>
-                    <p class="reveal" style="transition-delay: 0.2s;">Empowering the next generation of developers at our College Apple Lab. Where students train, innovate, and build world-class applications.</p>
-                    <div class="hero-btns reveal" style="transition-delay: 0.4s;">
-                        <a href="#projects" class="btn btn-primary">Our Projects</a>
-                        <a href="#about" class="btn btn-secondary">Learn More</a>
+            <div class="hero-visual">
+                <img src="assets/images/hero_phone.png" alt="iOS App Interface on iPhone" class="hero-phone">
+                
+                <div class="floating-card popup-card reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="card-text">
+                        <span class="label">STUDENT PROJECTS</span>
+                        <span class="value">Build Successful</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section-padding">
-            <div class="container">
-                <div class="section-title reveal">
-                    <h2>Student-Developed Apps</h2>
-                    <p>Innovative solutions crafted by the talented students of COE iOS Lab</p>
-                </div>
-
-                <div class="project-grid">
-                    <!-- Project 1: GURUCHATRA -->
-                    <div class="project-card reveal">
-                        <img src="assets/images/guruchatra.png" alt="GURUCHATRA ERP" class="project-img">
-                        <div class="project-info">
-                            <span class="project-tag">ERP Solution</span>
-                            <h3 class="project-title">GURUCHATRA</h3>
-                            <p class="project-desc">A comprehensive ERP application designed for efficient resource planning and management.</p>
+    <!-- Excellence Section -->
+    <section class="excellence" id="lab">
+        <div class="container excellence-content">
+            <div class="excellence-text reveal">
+                <h2>Guided by Engineering Excellence</h2>
+                <p>Our lab operates at the intersection of academic rigor and industry-standard development. Students are not just taught to code; they are mentored to think like software architects.</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon icon-blue">A</div>
+                        <div class="feature-info">
+                            <h3>Modern Swift Stack</h3>
+                            <p>Mastering SwiftUI, Combine, and the latest concurrency models in Swift 5.5+.</p>
                         </div>
                     </div>
-
-                    <!-- Project 2: College Navigation App -->
-                    <div class="project-card reveal">
-                        <img src="assets/images/college_nav.png" alt="College Navigation" class="project-img">
-                        <div class="project-info">
-                            <span class="project-tag">Navigation & Maps</span>
-                            <h3 class="project-title">College Navigation</h3>
-                            <p class="project-desc">Interactive campus mapping solution with real-time routing for students and visitors.</p>
+                    <div class="feature-item">
+                        <div class="feature-icon icon-outline">
+                            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                         </div>
-                    </div>
-
-                    <!-- Project 3: STRISHAKTHI -->
-                    <div class="project-card reveal">
-                        <img src="assets/images/strishakthi.png" alt="STRISHAKTHI" class="project-img">
-                        <div class="project-info">
-                            <span class="project-tag">Social Impact</span>
-                            <h3 class="project-title">STRISHAKTHI</h3>
-                            <p class="project-desc">Empowering women through a digital platform providing resources, community, and support.</p>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: MEDICATION APP -->
-                    <div class="project-card reveal">
-                        <img src="assets/images/medication.png" alt="Medication App" class="project-img">
-                        <div class="project-info">
-                            <span class="project-tag">Health Tech</span>
-                            <h3 class="project-title">Medication App</h3>
-                            <p class="project-desc">Smart reminder and management system for personal healthcare and medication schedules.</p>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: Timetable App -->
-                    <div class="project-card reveal">
-                        <img src="assets/images/timetable.png" alt="Timetable App" class="project-img">
-                        <div class="project-info">
-                            <span class="project-tag">Education</span>
-                            <h3 class="project-title">Timetable App</h3>
-                            <p class="project-desc">A streamlined scheduling tool for students to manage classes and academic commitments.</p>
-                        </div>
-                    </div>
-
-                    <!-- Project 6: Tax App -->
-                    <div class="project-card reveal">
-                        <img src="assets/images/tax.png" alt="Tax App" class="project-img">
-                        <div class="project-info">
-                            <span class="project-tag">Finance</span>
-                            <h3 class="project-title">Tax App</h3>
-                            <p class="project-desc">Professional-grade tax calculator and financial planning tool developed for simple calculations.</p>
+                        <div class="feature-info">
+                            <h3>Human Interface Guidelines</h3>
+                            <p>Deep-dives into Apple's design philosophy to create intuitive, accessible apps.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="section-padding glass" style="margin: 0 2rem; border-radius: 2rem;">
-            <div class="container">
-                <div class="section-title reveal">
-                    <h2>About the Lab</h2>
+            <div class="excellence-grid reveal">
+                <!-- Grid Cards -->
+                <div class="grid-card white-card stat-card">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#0066ff"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    <div>
+                        <span class="stat-label">CRASH-FREE RATE</span>
+                        <span class="stat-value">99.9%</span>
+                    </div>
                 </div>
-                <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    <p style="font-size: 1.25rem;">The COE in iOS App Development is a specialized Apple Lab dedicated to fostering excellence in mobile technology. Here, students undergo rigorous training, collaborate on real-world projects, and develop cutting-edge applications that push the boundaries of innovation.</p>
+                
+                <div class="grid-card blue-card">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    <h3>Lab 01</h3>
+                    <p>Core Data Architecture</p>
+                </div>
+
+                <div class="grid-card dark-card code-card">
+                    <pre><code>struct MainView: View {
+    var body: some View {
+        VStack {
+            Text("Engineered")
+        }
+    }
+}</code></pre>
+                    <div class="card-footer">Code Sandbox</div>
+                </div>
+                
+                <div class="grid-card grey-card">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="#0066ff"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <h3>Collaborative Coding</h3>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section-padding">
-            <div class="container">
-                <div class="section-title reveal">
-                    <h2>Connect with Us</h2>
-                </div>
-                <div class="reveal" style="text-align: center;">
-                    <a href="mailto:coe@college.edu" class="btn btn-primary" style="font-size: 1.5rem; padding: 1rem 3rem;">Get in Touch</a>
+    <!-- Projects Section -->
+    <section class="projects container" id="projects">
+        <div class="projects-header reveal">
+            <div>
+                <h2>Featured Lab Projects</h2>
+                <p>Exceptional iOS applications conceptualized, designed, and deployed by our student engineers.</p>
+            </div>
+            <div class="carousel-nav">
+                <button class="nav-btn">&larr;</button>
+                <button class="nav-btn">&rarr;</button>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1: GuruChatra -->
+            <div class="project-card large-card reveal" style="background: #f3f4f6;">
+                <img src="assets/images/guruchatra.png" alt="GuruChatra" class="project-image">
+                <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 40%, transparent 100%); color: white;">
+                    <div class="tags">
+                        <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">ERP</span>
+                        <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">COLLEGE</span>
+                    </div>
+                    <h3>GuruChatra</h3>
+                    <p style="color: rgba(255,255,255,0.9);">A comprehensive College ERP Application streamlining campus administration and student management.</p>
+                    <a href="#" class="case-study-link">Case Study <div class="line"></div></a>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer style="padding: 4rem 0; border-top: 1px solid var(--glass-border); text-align: center;">
-        <p>&copy; 2024 COE IN iOS APP DEVELOPMENT. All rights reserved.</p>
-    </footer>
+            <!-- Project 2: Strishakthi -->
+            <div class="project-card tall-card reveal" style="background: #f3f4f6;">
+                <img src="assets/images/strishakthi.png" alt="Strishakthi" class="project-image">
+                <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">SOCIAL</span>
+                    <h3>Strishakthi</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Dedicated Women Empowerment app focusing on community support and resources.</p>
+                </div>
+            </div>
 
+            <!-- Project 3: Medication App -->
+            <div class="project-card tall-card reveal" style="background: #f3f4f6;">
+                <img src="assets/images/medication.png" alt="Medication App" class="project-image">
+                <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">HEALTH</span>
+                    <h3>Medication App</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Intelligent tracking and scheduling for personal medication management.</p>
+                </div>
+            </div>
+
+            <!-- Project 4: College Navigation -->
+            <div class="project-card reveal" style="grid-column: span 2; background: #f3f4f6;">
+                <img src="assets/images/college_nav.png" alt="College Navigation App" class="project-image" style="object-position: center;">
+                <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
+                    <div>
+                        <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">NAVIGATION</span>
+                    </div>
+                    <h3>College Navigation App</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Navigate the campus effortlessly. An AR-powered application helping students find classrooms, labs, and facilities instantly.</p>
+                </div>
+            </div>
+
+            <!-- Project 5: Tax App -->
+            <div class="project-card tall-card reveal" style="background: #f3f4f6;">
+                <img src="assets/images/tax.png" alt="Tax App" class="project-image">
+                <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">FINANCE</span>
+                    <h3>Tax App</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Simplifying tax calculations and automated filing processes.</p>
+                </div>
+            </div>
+
+            <!-- Project 6: Timetable App -->
+            <div class="project-card reveal" style="grid-column: span 2; background: #f3f4f6;">
+                <img src="assets/images/timetable.png" alt="Timetable App" class="project-image" style="object-position: center;">
+                <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
+                    <div class="tags">
+                        <span class="tag" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">PRODUCTIVITY</span>
+                    </div>
+                    <h3>Timetable App</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Advanced scheduling tool optimizing class timings, assignments, and calendar events for students and faculty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats container reveal">
+        <div class="stats-pill">
+            <div class="stat-box">
+                <h2>5+</h2>
+                <span class="stat-title">PROJECTS DEPLOYED</span>
+                <p>Full-scale applications ranging from Fintech to AR experiences.</p>
+            </div>
+            <div class="stat-box">
+                <h2>100+</h2>
+                <span class="stat-title">STUDENTS TRAINED</span>
+                <p>Mentoring the next cohort of engineers for global tech leadership.</p>
+            </div>
+            <div class="stat-box">
+                <h2>1000+</h2>
+                <span class="stat-title">LINES OF SWIFT CODE</span>
+                <p>Robust, well-tested, and architecturally sound codebases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta container reveal" style="padding-bottom: 4rem;">
+        <h2>Ready to start your Swift journey?</h2>
+    </section>
 
     <script src="script.js"></script>
 </body>
