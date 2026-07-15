@@ -6,7 +6,7 @@
     <title>The Engineering Atelier | COE in iOS App Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div class="container nav-container">
             <a href="#" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;">
                 <img src="assets/images/logo.png" alt="Alliance University Logo" style="height: 38px; object-fit: contain;">
-                <img src="assets/images/Apple Authorisied centre.png" alt="Apple Authorized Training Centre" style="height: 38px; object-fit: contain; margin-left: -4px;">
+                <img src="assets/images/apple_atc_white.png" alt="Apple Authorized Training Centre" style="height: 30px; object-fit: contain; margin-left: 2px;">
                 <span style="font-size: 1.1rem; font-weight: 700; letter-spacing: -0.5px;">COE in iOS APP DEVELOPEMENT</span>
             </a>
             <ul class="nav-links">
@@ -43,10 +43,11 @@
                 <p>A premier incubator where students master Swift and Xcode to build the next generation of Apple ecosystem experiences through precision engineering and editorial design.</p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                    <a href="#lab" class="btn btn-ghost">The Lab &rarr;</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="assets/images/hero_phone.png" alt="iOS App Interface on iPhone" class="hero-phone">
+                <img src="assets/images/hero_phone.png?v=2" alt="iOS App Interface on iPhone" class="hero-phone">
                 
                 <div class="floating-card popup-card reveal">
                     <div class="card-icon">
@@ -59,12 +60,17 @@
                 </div>
             </div>
         </div>
+        <div class="scroll-cue">
+            <div class="mouse"><span></span></div>
+            <span>Scroll</span>
+        </div>
     </section>
 
     <!-- Excellence Section -->
     <section class="excellence" id="lab">
         <div class="container excellence-content">
             <div class="excellence-text reveal">
+                <span class="section-eyebrow">Why the Centre</span>
                 <h2>Guided by Engineering Excellence</h2>
                 <p>Our lab operates at the intersection of academic rigor and industry-standard development. Students are not just taught to code; they are mentored to think like software architects.</p>
                 
@@ -114,10 +120,10 @@
                 </div>
 
                 <div class="grid-card dark-card code-card">
-                    <pre><code>struct MainView: View {
-    var body: some View {
-        VStack {
-            Text("Engineered")
+                    <pre><code><span class="kw">struct</span> <span class="ty">MainView</span>: <span class="ty">View</span> {
+    <span class="kw">var</span> body: <span class="kw">some</span> <span class="ty">View</span> {
+        <span class="ty">VStack</span> {
+            <span class="ty">Text</span>(<span class="st">"Engineered"</span>)
         }
     }
 }</code></pre>
@@ -139,15 +145,36 @@
                 <h2>Featured Lab Projects</h2>
                 <p>Exceptional iOS applications conceptualized, designed, and ready to launch by our student engineers.</p>
             </div>
-            <div class="carousel-nav">
-                <button class="nav-btn">&larr;</button>
-                <button class="nav-btn">&rarr;</button>
+        </div>
+        <!-- Showcase Detail Box -->
+        <div class="project-showcase reveal" id="project-showcase">
+            <div class="showcase-content">
+                <div class="showcase-info">
+                    <div class="tags" id="showcase-tags">
+                        <span class="tag">ERP</span>
+                        <span class="tag">COLLEGE</span>
+                    </div>
+                    <h3 id="showcase-title">GuruChatra</h3>
+                    <p id="showcase-desc" class="showcase-desc">A comprehensive College ERP Application streamlining campus administration and student management.</p>
+                    <div class="showcase-features">
+                        <h4>Key Specifications & Features</h4>
+                        <ul id="showcase-specs">
+                            <li><strong>Platforms:</strong> Android, iOS &amp; Web</li>
+                            <li><strong>Tech Stack:</strong> Swift, SwiftUI, Kotlin, React, CoreData, REST APIs</li>
+                            <li><strong>Target Audience:</strong> Students, Faculty, and Admin</li>
+                            <li><strong>Core Features:</strong> Attendance tracking, timetable view, grading sheet, and fee payment portal.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="showcase-image-container">
+                    <img src="assets/images/guruchatra.png" alt="Showcase Project Image" id="showcase-img" class="showcase-img">
+                </div>
             </div>
         </div>
 
         <div class="projects-grid">
             <!-- Project 1: GuruChatra -->
-            <div class="project-card large-card reveal" style="background: #f3f4f6;">
+            <div class="project-card large-card reveal" data-project="guruchatra" style="background: #f3f4f6; cursor: pointer;">
                 <img src="assets/images/guruchatra.png" alt="GuruChatra" class="project-image">
                 <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 40%, transparent 100%); color: white;">
                     <div class="tags">
@@ -156,12 +183,12 @@
                     </div>
                     <h3>GuruChatra</h3>
                     <p style="color: rgba(255,255,255,0.9);">A comprehensive College ERP Application streamlining campus administration and student management.</p>
-                    <a href="#" class="case-study-link">Case Study <div class="line"></div></a>
+                    <a href="#project-showcase" class="case-study-link">Case Study <div class="line"></div></a>
                 </div>
             </div>
 
             <!-- Project 2: Strishakthi -->
-            <div class="project-card tall-card reveal" style="background: #f3f4f6;">
+            <div class="project-card tall-card reveal" data-project="strishakthi" style="background: #f3f4f6; cursor: pointer;">
                 <img src="assets/images/strishakthi.png" alt="Strishakthi" class="project-image">
                 <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
                     <div class="tags">
@@ -169,12 +196,12 @@
                     </div>
                     <h3>Strishakthi</h3>
                     <p style="color: rgba(255,255,255,0.9);">Dedicated Women Empowerment app focusing on community support and resources.</p>
-                    <a href="#" class="case-study-link">Case Study <div class="line"></div></a>
+                    <a href="#project-showcase" class="case-study-link">Case Study <div class="line"></div></a>
                 </div>
             </div>
 
             <!-- Project 3: Medication App -->
-            <div class="project-card tall-card reveal" style="background: #f3f4f6;">
+            <div class="project-card tall-card reveal" data-project="medication" style="background: #f3f4f6; cursor: pointer;">
                 <img src="assets/images/medication.png" alt="Medication App" class="project-image">
                 <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
                     <div class="tags">
@@ -182,12 +209,12 @@
                     </div>
                     <h3>Medication App</h3>
                     <p style="color: rgba(255,255,255,0.9);">Intelligent tracking and scheduling for personal medication management.</p>
-                    <a href="#" class="case-study-link">Case Study <div class="line"></div></a>
+                    <a href="#project-showcase" class="case-study-link">Case Study <div class="line"></div></a>
                 </div>
             </div>
 
             <!-- Project 4: College Navigation -->
-            <div class="project-card reveal" style="grid-column: span 2; background: #f3f4f6;">
+            <div class="project-card reveal" data-project="college_nav" style="grid-column: span 2; background: #f3f4f6; cursor: pointer;">
                 <img src="assets/images/college_nav.png" alt="College Navigation App" class="project-image" style="object-position: center;">
                 <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
                     <div class="tags">
@@ -195,12 +222,12 @@
                     </div>
                     <h3>College Navigation App</h3>
                     <p style="color: rgba(255,255,255,0.9);">Navigate the campus effortlessly. An AR-powered application helping students find classrooms, labs, and facilities instantly.</p>
-                    <a href="#" class="case-study-link">Case Study <div class="line"></div></a>
+                    <a href="#project-showcase" class="case-study-link">Case Study <div class="line"></div></a>
                 </div>
             </div>
 
             <!-- Project 5: Tax App -->
-            <div class="project-card tall-card reveal" style="background: #f3f4f6;">
+            <div class="project-card tall-card reveal" data-project="tax" style="background: #f3f4f6; cursor: pointer;">
                 <img src="assets/images/tax.png" alt="Tax App" class="project-image">
                 <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
                     <div class="tags">
@@ -208,12 +235,12 @@
                     </div>
                     <h3>Tax App</h3>
                     <p style="color: rgba(255,255,255,0.9);">Simplifying tax calculations and automated filing processes.</p>
-                    <a href="#" class="case-study-link">Case Study <div class="line"></div></a>
+                    <a href="#project-showcase" class="case-study-link">Case Study <div class="line"></div></a>
                 </div>
             </div>
 
             <!-- Project 6: Timetable App -->
-            <div class="project-card reveal" style="grid-column: span 2; background: #f3f4f6;">
+            <div class="project-card reveal" data-project="timetable" style="grid-column: span 2; background: #f3f4f6; cursor: pointer;">
                 <img src="assets/images/timetable.png" alt="Timetable App" class="project-image" style="object-position: center;">
                 <div class="project-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); color: white;">
                     <div class="tags">
@@ -221,7 +248,7 @@
                     </div>
                     <h3>Timetable App</h3>
                     <p style="color: rgba(255,255,255,0.9);">Advanced scheduling tool optimizing class timings, assignments, and calendar events for students and faculty.</p>
-                    <a href="#" class="case-study-link">Case Study <div class="line"></div></a>
+                    <a href="#project-showcase" class="case-study-link">Case Study <div class="line"></div></a>
                 </div>
             </div>
         </div>
@@ -231,17 +258,17 @@
     <section class="stats container reveal">
         <div class="stats-pill">
             <div class="stat-box">
-                <h2>5+</h2>
+                <h2 data-count="5" data-suffix="+">0</h2>
                 <span class="stat-title">PROJECTS READY TO LAUNCH</span>
                 <p>Full-scale applications ranging from Fintech to AR experiences.</p>
             </div>
             <div class="stat-box">
-                <h2>Nearly 100+</h2>
+                <h2 data-prefix="Nearly " data-count="100" data-suffix="+">0</h2>
                 <span class="stat-title">STUDENTS TRAINED</span>
                 <p>Mentoring the next cohort of engineers for global tech leadership.</p>
             </div>
             <div class="stat-box">
-                <h2>1000+</h2>
+                <h2 data-count="1000" data-suffix="+">0</h2>
                 <span class="stat-title">LINES OF SWIFT CODE</span>
                 <p>Robust, well-tested, and architecturally sound codebases.</p>
             </div>
@@ -249,9 +276,30 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta container reveal" style="padding-bottom: 4rem;">
+    <section class="cta reveal">
+        <span class="section-eyebrow">Join the Centre</span>
         <h2>Ready to start your Swift journey?</h2>
+        <p>Build production-grade iOS applications alongside mentors at the Apple Authorized Training Centre. Your next app starts here.</p>
+        <div class="cta-actions">
+            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+            <a href="#lab" class="btn btn-ghost">Discover the Lab &rarr;</a>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <strong>COE in iOS App Development</strong>
+                <p>Alliance University &middot; Apple Authorized Training Centre for Education</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">HOME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#lab">LAB ENVIRONMENT</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

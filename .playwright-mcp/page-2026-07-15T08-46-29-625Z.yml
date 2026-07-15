@@ -1,0 +1,180 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Alliance University Logo Apple Authorized Training Centre COE in iOS APP DEVELOPEMENT" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - img "Alliance University Logo" [ref=e5]
+        - img "Apple Authorized Training Centre" [ref=e6]
+        - generic [ref=e7]: COE in iOS APP DEVELOPEMENT
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e11]:
+          - link "Projects" [ref=e12] [cursor=pointer]:
+            - /url: "#projects"
+        - listitem [ref=e13]:
+          - link "Lab Environment" [ref=e14] [cursor=pointer]:
+            - /url: "#lab"
+      - link "View Project" [ref=e15] [cursor=pointer]:
+        - /url: "#projects"
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Ongoing FDP
+      - generic [ref=e20]: T3 performance assessment conducted with AATCe is free of cost.
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: COE IOS APP DEVELOPMENT LAB
+        - heading "Innovating the Future of iOS Development" [level=1] [ref=e24]
+        - paragraph [ref=e25]: A premier incubator where students master Swift and Xcode to build the next generation of Apple ecosystem experiences through precision engineering and editorial design.
+        - generic [ref=e26]:
+          - link "Explore Projects" [ref=e27] [cursor=pointer]:
+            - /url: "#projects"
+          - link "The Lab →" [ref=e28] [cursor=pointer]:
+            - /url: "#lab"
+      - generic [ref=e29]:
+        - img "iOS App Interface on iPhone" [ref=e30]
+        - generic [ref=e35]:
+          - generic [ref=e36]: STUDENT PROJECTS
+          - generic [ref=e37]: Build Successful
+    - generic [ref=e38]: Scroll
+  - generic [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]: Why the Centre
+      - heading "Guided by Engineering Excellence" [level=2] [ref=e46]
+      - paragraph [ref=e47]: Our lab operates at the intersection of academic rigor and industry-standard development. Students are not just taught to code; they are mentored to think like software architects.
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: A
+          - generic [ref=e51]:
+            - heading "Modern Swift Stack" [level=3] [ref=e52]
+            - paragraph [ref=e53]: Mastering SwiftUI, Combine, and the latest concurrency models in Swift 5.5+.
+        - generic [ref=e58]:
+          - heading "Human Interface Guidelines" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Deep-dives into Apple's design philosophy to create intuitive, accessible apps.
+        - generic [ref=e65]:
+          - heading "FDP (Capacity Building)" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Ongoing Faculty Development Program. Performance assessment T3 will be conducted in association with AATCe, completely free of cost.
+    - generic [ref=e68]:
+      - generic [ref=e72]:
+        - generic [ref=e73]: CRASH-FREE RATE
+        - generic [ref=e74]: 99.9%
+      - generic [ref=e75]:
+        - heading "Lab 01" [level=3] [ref=e78]
+        - paragraph [ref=e79]: Core Data Architecture
+      - generic [ref=e80]:
+        - code [ref=e82]: "struct MainView: View { var body: some View { VStack { Text(\"Engineered\") } } }"
+        - generic [ref=e83]: Code Sandbox
+      - heading "Collaborative Coding" [level=3] [ref=e87]
+  - generic [ref=e88]:
+    - generic [ref=e90]:
+      - heading "Featured Lab Projects" [level=2] [ref=e91]
+      - paragraph [ref=e92]: Exceptional iOS applications conceptualized, designed, and ready to launch by our student engineers.
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]: ERP
+          - generic [ref=e98]: COLLEGE
+        - heading "GuruChatra" [level=3] [ref=e99]
+        - paragraph [ref=e100]: A comprehensive College ERP Application streamlining campus administration and student management.
+        - generic [ref=e101]:
+          - heading "Key Specifications & Features" [level=4] [ref=e102]
+          - list [ref=e103]:
+            - listitem [ref=e104]:
+              - strong [ref=e105]: "Platforms:"
+              - text: Android, iOS & Web
+            - listitem [ref=e106]:
+              - strong [ref=e107]: "Tech Stack:"
+              - text: Swift, SwiftUI, Kotlin, React, CoreData, REST APIs
+            - listitem [ref=e108]:
+              - strong [ref=e109]: "Target Audience:"
+              - text: Students, Faculty, and Admin
+            - listitem [ref=e110]:
+              - strong [ref=e111]: "Core Features:"
+              - text: Attendance tracking, timetable view, grading sheet, and fee payment portal.
+      - img "Showcase Project Image" [ref=e113]
+    - generic [ref=e114]:
+      - generic [ref=e115] [cursor=pointer]:
+        - img "GuruChatra" [ref=e116]
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: ERP
+            - generic [ref=e120]: COLLEGE
+          - heading "GuruChatra" [level=3] [ref=e121]
+          - paragraph [ref=e122]: A comprehensive College ERP Application streamlining campus administration and student management.
+          - link "Case Study" [ref=e123]:
+            - /url: "#project-showcase"
+      - generic [ref=e125] [cursor=pointer]:
+        - img "Strishakthi" [ref=e126]
+        - generic [ref=e127]:
+          - generic [ref=e128]: SOCIAL
+          - heading "Strishakthi" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Dedicated Women Empowerment app focusing on community support and resources.
+          - link "Case Study" [ref=e132]:
+            - /url: "#project-showcase"
+      - generic [ref=e134] [cursor=pointer]:
+        - img "Medication App" [ref=e135]
+        - generic [ref=e136]:
+          - generic [ref=e137]: HEALTH
+          - heading "Medication App" [level=3] [ref=e139]
+          - paragraph [ref=e140]: Intelligent tracking and scheduling for personal medication management.
+          - link "Case Study" [ref=e141]:
+            - /url: "#project-showcase"
+      - generic [ref=e143] [cursor=pointer]:
+        - img "College Navigation App" [ref=e144]
+        - generic [ref=e145]:
+          - generic [ref=e146]: NAVIGATION
+          - heading "College Navigation App" [level=3] [ref=e148]
+          - paragraph [ref=e149]: Navigate the campus effortlessly. An AR-powered application helping students find classrooms, labs, and facilities instantly.
+          - link "Case Study" [ref=e150]:
+            - /url: "#project-showcase"
+      - generic [ref=e152] [cursor=pointer]:
+        - img "Tax App" [ref=e153]
+        - generic [ref=e154]:
+          - generic [ref=e155]: FINANCE
+          - heading "Tax App" [level=3] [ref=e157]
+          - paragraph [ref=e158]: Simplifying tax calculations and automated filing processes.
+          - link "Case Study" [ref=e159]:
+            - /url: "#project-showcase"
+      - generic [ref=e161] [cursor=pointer]:
+        - img "Timetable App" [ref=e162]
+        - generic [ref=e163]:
+          - generic [ref=e164]: PRODUCTIVITY
+          - heading "Timetable App" [level=3] [ref=e166]
+          - paragraph [ref=e167]: Advanced scheduling tool optimizing class timings, assignments, and calendar events for students and faculty.
+          - link "Case Study" [ref=e168]:
+            - /url: "#project-showcase"
+  - generic [ref=e171]:
+    - generic [ref=e172]:
+      - heading "0" [level=2] [ref=e173]
+      - generic [ref=e174]: PROJECTS READY TO LAUNCH
+      - paragraph [ref=e175]: Full-scale applications ranging from Fintech to AR experiences.
+    - generic [ref=e176]:
+      - heading "0" [level=2] [ref=e177]
+      - generic [ref=e178]: STUDENTS TRAINED
+      - paragraph [ref=e179]: Mentoring the next cohort of engineers for global tech leadership.
+    - generic [ref=e180]:
+      - heading "0" [level=2] [ref=e181]
+      - generic [ref=e182]: LINES OF SWIFT CODE
+      - paragraph [ref=e183]: Robust, well-tested, and architecturally sound codebases.
+  - generic [ref=e184]:
+    - generic [ref=e185]: Join the Centre
+    - heading "Ready to start your Swift journey?" [level=2] [ref=e186]
+    - paragraph [ref=e187]: Build production-grade iOS applications alongside mentors at the Apple Authorized Training Centre. Your next app starts here.
+    - generic [ref=e188]:
+      - link "Explore Projects" [ref=e189] [cursor=pointer]:
+        - /url: "#projects"
+      - link "Discover the Lab →" [ref=e190] [cursor=pointer]:
+        - /url: "#lab"
+  - contentinfo [ref=e191]:
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - strong [ref=e194]: COE in iOS App Development
+        - paragraph [ref=e195]: Alliance University · Apple Authorized Training Centre for Education
+      - generic [ref=e196]:
+        - link "HOME" [ref=e197] [cursor=pointer]:
+          - /url: "#"
+        - link "PROJECTS" [ref=e198] [cursor=pointer]:
+          - /url: "#projects"
+        - link "LAB ENVIRONMENT" [ref=e199] [cursor=pointer]:
+          - /url: "#lab"
